@@ -1718,3 +1718,30 @@ h1.major {
     border-bottom: none;
     padding-bottom: 0; /* po želji, da se ukloni prostor ispod */
 }
+
+/* ===== POSTOJEĆI CSS ===== */
+/* ... tvoji trenutni stilovi ... */
+
+/* ===== MOBILNI MENI ===== */
+@media (max-width: 768px) {
+    #header nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #header nav ul li {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #header nav ul li a {
+        display: block;
+        padding: 1em 0;
+        text-decoration: none;
+    }
+}
