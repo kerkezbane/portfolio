@@ -1720,22 +1720,25 @@ h1.major {
 }
 
 @media (max-width: 768px) {
+    /* Header meni postaje vertikalan */
     #header nav ul {
-        flex-direction: row; /* horizontalno da možemo koristiti 50% width */
-        flex-wrap: wrap;     /* dozvoli prelamanje ako nema dovoljno prostora */
+        flex-direction: column; /* linkovi jedan ispod drugog */
+        width: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
     }
 
     #header nav ul li {
-        width: 50%;          /* svaki link zauzima pola širine */
+        width: 100%;            /* svaki link zauzima celu širinu */
         text-align: center;
-        box-sizing: border-box; /* važno da padding ne probija širinu */
+        box-sizing: border-box;  /* da padding ne probija širinu */
+        border-bottom: 1px solid #ccc; /* opcionalno, za razdvajanje linkova */
     }
 
     #header nav ul li a {
-        display: block;
-        padding: 1em 0;      /* dodaj prostor za tap */
+        display: block;          /* cela površina je klikabilna */
+        padding: 1em 0;          /* prostor za tap */
+        text-decoration: none;   
     }
 }
