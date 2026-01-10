@@ -1720,25 +1720,8 @@ h1.major {
 }
 
 @media (max-width: 768px) {
-    /* Header meni postaje vertikalan */
-    #header nav ul {
-        flex-direction: column; /* linkovi jedan ispod drugog */
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    #header nav ul li {
-        width: 100%;            /* svaki link zauzima celu širinu */
-        text-align: center;
-        box-sizing: border-box;  /* da padding ne probija širinu */
-        border-bottom: 1px solid #ccc; /* opcionalno, za razdvajanje linkova */
-    }
-
-    #header nav ul li a {
-        display: block;          /* cela površina je klikabilna */
-        padding: 1em 0;          /* prostor za tap */
-        text-decoration: none;   
+    /* Ako je header fiksiran ili apsolutan */
+    body {
+        padding-top: 80px; /* visina header-a na mobilnom */
     }
 }
