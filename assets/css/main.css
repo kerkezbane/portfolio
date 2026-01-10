@@ -1,6 +1,23 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+/* Osnovno za desktop */
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+/* Mobilne uređaje */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+  nav {
+    font-size: 18px;
+  }
+}
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -1706,42 +1723,4 @@ input, select, textarea {
 
 .work-tools span {
     color: #ff0000; /* crvena */
-}
-
-/* UKLANJANJE USPRAVNE CRTE IZNAD MENIJA */
-#header nav::before,
-#header .content::before,
-#header .content::after {
-    display: none !important;
-
-h1.major {
-    border-bottom: none;
-    padding-bottom: 0; /* po želji, da se ukloni prostor ispod */
-}
-
-/* ===== POSTOJEĆI CSS ===== */
-/* ... tvoji trenutni stilovi ... */
-
-/* ===== MOBILNI MENI ===== */
-@media (max-width: 768px) {
-    #header nav ul {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    #header nav ul li {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        border-bottom: 1px solid #ccc;
-    }
-
-    #header nav ul li a {
-        display: block;
-        padding: 1em 0;
-        text-decoration: none;
-    }
 }
