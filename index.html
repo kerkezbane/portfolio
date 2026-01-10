@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="sr">
+<head>
+    <title>Branko Kerkez | IT Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { 
+            margin:0;
+            font-family: sans-serif;
+            background: url('images/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* === HEADER === */
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em 0;
+        }
+
+        #header .inner h1 {
+            margin: 0;
+            color: #fff;
+        }
+
+        #header .inner p {
+            margin: 0.2em 0 1em 0;
+            color: #aaa;
+        }
+
+        /* === NAV meni === */
+        #header nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+        }
+
+        #header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #header nav ul li {
+            flex: 1; /* svaki link zauzima isti deo */
+            height: 100%;
+        }
+
+        #header nav ul li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.3s;
+            border-radius: 0;
+            padding: 0; /* padding ide unutra ako želiš */
+        }
+
+        #header nav ul li a:hover {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        /* === Work card === */
+        .work-card {
+            background: linear-gradient(145deg, rgba(20,20,20,0.95), rgba(10,10,10,0.95));
+            border: 2px solid rgba(0,229,255,0.25);
+            border-radius: 16px;
+            padding: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0 0 25px rgba(0,0,0,0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .work-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 40px rgba(0,229,255,0.5);
+            border-color: rgba(0,229,255,0.5);
+        }
+
+        .work-header { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 0.8em; }
+        .work-header h3 { color: #00e5ff; margin-bottom: 0.2em; }
+        .work-date { color: #aaa; font-size: 0.9em; }
+        .work-role { color: #fff; font-weight: 600; margin-bottom: 0.8em; }
+        .work-tools span { color: #00ff9c; font-weight: 600; }
+
+        input, textarea { 
+            background: #111; 
+            border: 1px solid #333; 
+            color: #fff; 
+            padding: 0.6em; 
+            width: 100%; 
+            border-radius: 8px; 
+        }
+        input:focus, textarea:focus { border-color: #00e5ff; outline:none; }
+        .button.primary { 
+            background: linear-gradient(135deg, #00e5ff, #7c4dff, #00ff9c); 
+            color:#000; border:none; 
+            padding:0.7em 1.5em; 
+            border-radius:10px; 
+            cursor:pointer; font-weight:bold; 
+        }
+
+        .icons { display: flex; gap: 1em; margin-top:1em; }
+        .icons a { font-size: 1.6rem; animation: iconColor 6s linear infinite; }
+        @keyframes iconColor { 0% { color: #00e5ff; } 33% { color: #7c4dff; } 66% { color: #00ff9c; } 100% { color: #00e5ff; } }
+
+        #footer { color: #aaa; text-align:center; padding:1em 0; font-size:0.95rem; }
+    </style>
+</head>
+<body class="is-preload">
+
+<div id="wrapper">
+
+    <header id="header">
+        <div class="content">
+            <div class="inner">
+                <h1>BRANKO KERKEZ</h1>
+                <p>IT SISTEMI • ERP • BAZE PODATAKA • AUTOMATIZACIJA</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">O MENI</a></li>
+                <li><a href="#work">ISKUSTVO</a></li>
+                <li><a href="#skills">VEŠTINE</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main">
+        <!-- O MENI -->
+        <article id="intro">
+            <h2 class="major">O meni</h2>
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Branko Kerkez</h3>
+                    <span class="work-date">Novi Beograd</span>
+                </div>
+                <div class="work-role">IT profesionalac • ERP • Baze podataka • Automatizacija procesa</div>
+                <ul>
+                    <li>📍 Lokacija: Novi Beograd</li>
+                    <li>📧 <a href="mailto:kerkezbane@gmail.com">kerkezbane@gmail.com</a></li>
+                </ul>
+                <div class="work-tools"><span>Preko 20 godina iskustva u radu sa ERP sistema i automatizaciji poslovnih procesa</span></div>
+            </div>
+        </article>
+
+        <!-- RADNO ISKUSTVO -->
+        <article id="work">
+            <h2 class="major">Radno iskustvo</h2>
+
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Beosport-System</h3>
+                    <span class="work-date">2024 – 2025</span>
+                </div>
+                <div class="work-role">Implementacija voznog parka / IT podrška / Back Office</div>
+                <ul>
+                    <li>Razvijena aplikacija za upravljanje voznim parkom u MS Access-u</li>
+                    <li>Evidencija vozila, servisa, osiguranja i troškova</li>
+                    <li>Automatska provera računa iz SEF sistema i detekcija neusaglašenosti</li>
+                    <li>Analiza isplativosti vozila i obračun troška po kilometru</li>
+                    <li>Kreiranje prilagođenih izveštaja i dashboard-a</li>
+                    <li>Automatski predlog plaćanja ka dobavljačima kroz QlikView integraciju</li>
+                </ul>
+                <div class="work-tools"><span>Alati:</span> MS Access, VBA, SQL, Excel, QlikView</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Berner Srbija</h3>
+                    <span class="work-date">2021 – 2024</span>
+                </div>
+                <div class="work-role">Specijalista za poslovne procese / Back Office</div>
+                <ul>
+                    <li>Implementacija i prilagođavanje ERP sistema MS Dynamics 365 Business Central</li>
+                    <li>Saradnja sa eksternim partnerima i krajnjim korisnicima</li>
+                    <li>Obuka korisnika i izrada dokumentacije</li>
+                    <li>Implementacija webshop-a u OpenCart-u</li>
+                    <li>Automatizacija izveštavanja i vizualizacije podataka korišćenjem QlikView</li>
+                    <li>Kreiranje promotivnih materijala kroz Adobe paket</li>
+                    <li>Poručivanje robe od dobavljača</li>
+                    <li>Vođenje prodajnih porudžbina i ponuda</li>
+                </ul>
+                <div class="work-tools"><span>Alati:</span> Business Central, QlikView, OpenCart, Adobe, Excel</div>
+            </div>
+
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Fortuna-International d.o.o.</h3>
+                    <span class="work-date">2002 – 2021</span>
+                </div>
+                <div class="work-role">Referent nabavke / Menadžer prodaje / Back Office</div>
+                <ul>
+                    <li>Vođenje i implementacija Microsoft Dynamics NAV 5.0 ERP sistema</li>
+                    <li>Analiza izlaznosti proizvoda i optimizacija zaliha i lanca snabdevanja</li>
+                    <li>Kreiranje interaktivnih dashboard-a i izveštaja u QlikView</li>
+                    <li>Napredna analiza podataka u Excel-u i SQL bazama</li>
+                    <li>Vođenje i koordinacija tima od 20 komercijalista</li>
+                    <li>Planiranje i praćenje prodajnih ciljeva</li>
+                    <li>Pregovori sa ključnim kupcima i dobavljačima</li>
+                    <li>Poručivanje robe od dobavljača</li>
+                    <li>Vođenje prodajnih porudžbina i ponuda</li>
+		    <li>Izrada izveštaja</li>
+                </ul>
+                <div class="work-tools"><span>Alati:</span> MS Dynamics NAV, QlikView, Excel, SQL, Access</div>
+            </div>
+        </article>
+
+        <!-- VEŠTINE -->
+        <article id="skills">
+            <h2 class="major">Veštine</h2>
+
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Tehničke veštine</h3>
+                    <span class="work-date">Kurs: QlikView BI – AD Acta (Microsoft partner)</span>
+                </div>
+                <div class="work-role">ERP, BI, baze podataka, Webshop, Dizajn</div>
+                <ul>
+                    <li>ERP sistemi: MS Dynamics NAV / Business Central</li>
+                    <li>BI i izveštavanje: QlikView, Excel (pivot tabele, VBA)</li>
+                    <li>Baze podataka: SQL, Access</li>
+                    <li>Baze podataka: Importovanje i mapiranje podataka</li>
+                    <li>Webshop: OpenCart</li>
+                    <li>Dizajn i prezentacija: Adobe paket (Illustrator, InDesign)</li>
+                    <li>Automatizacija procesa i dashboard-i</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- KONTAKT -->
+        <article id="contact">
+            <h2 class="major">Kontakt</h2>
+
+            <div class="work-card">
+                <div class="work-header">
+                    <h3>Branko Kerkez</h3>
+                    <span class="work-date">Novi Beograd</span>
+                </div>
+                <div class="work-role">IT Profesionalac • ERP • Baze Podataka</div>
+                <ul>
+                    <li>📧 <a href="mailto:kerkezbane@gmail.com">kerkezbane@gmail.com</a></li>
+                    <li>📞 +381 69 211 1298</li>
+                </ul>
+                <div class="work-tools"><span></span></div>
+            </div>
+        </article>
+
+    </div>
+
+    <footer id="footer">
+        <p>&copy; Branko Kerkez</p>
+    </footer>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
