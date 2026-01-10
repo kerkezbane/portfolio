@@ -1721,16 +1721,21 @@ h1.major {
 
 @media (max-width: 768px) {
     #header nav ul {
-        flex-direction: column; /* linkovi jedan ispod drugog */
-        height: auto;
+        flex-direction: row; /* horizontalno da možemo koristiti 50% width */
+        flex-wrap: wrap;     /* dozvoli prelamanje ako nema dovoljno prostora */
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     #header nav ul li {
-        width: 100%;
+        width: 50%;          /* svaki link zauzima pola širine */
         text-align: center;
+        box-sizing: border-box; /* važno da padding ne probija širinu */
     }
 
     #header nav ul li a {
-        padding: 1em 0; /* dodaj više prostora za tap */
+        display: block;
+        padding: 1em 0;      /* dodaj prostor za tap */
     }
 }
