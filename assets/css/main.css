@@ -1720,8 +1720,11 @@ h1.major {
 }
 
 @media (max-width: 768px) {
-    /* Ako je header fiksiran ili apsolutan */
-    body {
-        padding-top: 80px; /* visina header-a na mobilnom */
+    #header nav ul {
+        flex-direction: column;
+    }
+    #header nav ul li {
+        width: 100%;
+        text-align: center;
     }
 }
