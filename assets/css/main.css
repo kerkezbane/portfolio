@@ -1724,3 +1724,8 @@ input, select, textarea {
 .work-tools span {
     color: #ff0000; /* crvena */
 }
+
+/* Uklanja uspravnu liniju iznad menija */
+#header nav:before {
+    display: none !important;
+}
