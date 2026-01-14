@@ -1729,3 +1729,53 @@ input, select, textarea {
 #header nav:before {
     display: none !important;
 }
+
+
+
+/* ============================= */
+/*  CLEAN MINIMAL NAV OVERRIDE  */
+/* ============================= */
+
+/* ukloni sve linije i okvire */
+#header nav,
+#header nav ul,
+#header nav ul li,
+#header nav ul li a {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ukloni middle separator */
+#header nav.use-middle:after {
+    display: none !important;
+}
+
+/* ukloni hover background (crveno i belo) */
+#header nav ul li a:hover,
+#header nav ul li a:active {
+    background-color: transparent !important;
+}
+
+/* ravnomeran, čist raspored */
+#header nav ul {
+    display: flex;
+    width: 100%;
+}
+
+#header nav ul li {
+    flex: 1;
+}
+
+/* link – minimalistički */
+#header nav ul li a {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    line-height: 3rem;
+
+    padding: 0 !important;
+    min-width: unset !important;
+
+    color: #ffffff !important;
